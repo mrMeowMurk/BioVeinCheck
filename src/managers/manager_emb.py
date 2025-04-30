@@ -79,8 +79,9 @@ class EmbeddingManager:
         else:
             model = models.resnet50(weights=None)
             model.load_state_dict(torch.load(MODEL_PATH))
-        model.eval()
         model.fc = torch.nn.Identity()
+        model.eval()
+        
         self.model = model
 
     def _compute_emb(self, img_path):
