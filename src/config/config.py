@@ -39,6 +39,19 @@ class BotConfig:
         return cls(
             token = os.getenv("BOT_TOKEN"),
         )
+        
+@dataclass
+class UserConfig:
+    """
+        Конфигурация пользователей
+    """
+    admins:   List[int]
+
+    @classmethod
+    def from_env(cls) -> 'UserConfig':
+        return cls(
+            admins   = [6715041286, 804676300, 1900362240]
+        )
 
 class Config:
     """
@@ -46,6 +59,7 @@ class Config:
     """
     def __init__(self):
         self.bot      = BotConfig.from_env()
+        self.users    = UserConfig.from_env()
         
     def validate(self) -> bool:
         """

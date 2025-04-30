@@ -7,12 +7,15 @@ import os
 from ...utils import logger, language
 from ...messages import ru, en
 from ...states import AdminStates
+from ...filters import filter_only_admin
 
 
 async def add_user_command(message: types.Message, state: FSMContext):
     """
     Обработчик команды /add
     """
+    if not await filter_only_admin(message):
+        return
     logger.info(f"Received add command from {message.from_user.id}")
     
     lang = language.get_user_language(message.from_user)
