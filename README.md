@@ -51,7 +51,7 @@ cd BioVeinCheck
 # 2. Создайте и активируйте виртуальное окружение
 python -m venv venv
 source venv/bin/activate  # Для Linux/MacOS
-venv\Scripts\activate     # Для Windows
+.\.env\Scripts\activate   # Для Windows
 
 # 3. Установите зависимости
 pip install -r requirements.txt
