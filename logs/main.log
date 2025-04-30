@@ -20,3 +20,40 @@
 2025-04-30 16:36:05 - app - INFO - Received add command from 6715041286
 2025-04-30 16:36:51 - app - INFO - Received add command from 6715041286
 2025-04-30 16:41:05 - app - INFO - Polling was cancelled
+2025-04-30 16:53:41 - app - INFO - Starting polling
+2025-04-30 16:54:35 - app - INFO - Received verification command from 6715041286
+2025-04-30 16:54:35 - app - INFO - Received verification command from 6715041286
+2025-04-30 16:54:35 - app - INFO - Received start command from 6715041286
+2025-04-30 16:54:35 - app - INFO - Received start command from 6715041286
+2025-04-30 16:54:35 - app - INFO - Received start command from 6715041286
+2025-04-30 16:54:48 - app - INFO - Starting polling
+2025-04-30 16:54:50 - app - INFO - Received start command from 6715041286
+2025-04-30 16:54:59 - app - INFO - Received help command from 6715041286
+2025-04-30 16:55:15 - app - INFO - Received verification command from 6715041286
+2025-04-30 16:56:01 - app - INFO - Deleted temporary verification file: data\temp\verify_AgACAgIAAxkBAAIBKWgSJ7FFVbx3J1GYrRI6mfi7ol9rAAJ27zEb1QeQSDWXQmssBsZNAQADAgADeQADNgQ.jpg
+2025-04-30 16:56:47 - app - INFO - Received verification command from 6715041286
+2025-04-30 16:57:22 - app - INFO - Deleted temporary verification file: data\temp\verify_AgACAgIAAxkBAAIBPmgSLEJseT6SqPRYJ5qCLwvZv7o7AAK07zEb1QeQSBMTGO94ZAS0AQADAgADeAADNgQ.jpg
+2025-04-30 16:57:49 - app - INFO - Received verification command from 6715041286
+2025-04-30 16:57:54 - app - INFO - Deleted temporary verification file: data\temp\verify_AgACAgIAAxkBAAIBQmgSLGOqXfXNHaWrDuCx2M1gbbXmAAK27zEb1QeQSOteHzNZmiNiAQADAgADeAADNgQ.jpg
+2025-04-30 16:58:10 - app - INFO - Received verification command from 6715041286
+2025-04-30 16:58:22 - app - INFO - Deleted temporary verification file: data\temp\verify_AgACAgIAAxkBAAIBRmgSLIAIrm88BjLfwVzQpn34sAABGAACt-8xG9UHkEhkJdIZ3ROOUQEAAwIAA20AAzYE.jpg
+2025-04-30 16:58:32 - app - INFO - Received verification command from 6715041286
+2025-04-30 16:58:49 - app - INFO - Deleted temporary verification file: data\temp\verify_AgACAgIAAxkBAAIBSmgSLJQxFQdjuXKzXlUlOHtizC43AAK47zEb1QeQSGgMlsk6U_nZAQADAgADeQADNgQ.jpg
+2025-04-30 16:59:02 - app - INFO - Received verification command from 6715041286
+2025-04-30 16:59:12 - app - INFO - Deleted temporary verification file: data\temp\verify_AgACAgIAAxkBAAIBTmgSLLE8fZ3qWcJNOJxLryb9b2APAAK57zEb1QeQSIka7rnPCKl8AQADAgADeAADNgQ.jpg
+2025-04-30 16:59:22 - app - INFO - Received verification command from 6715041286
+2025-04-30 16:59:38 - app - INFO - Deleted temporary verification file: data\temp\verify_AgACAgIAAxkBAAIBUmgSLMwJfFGofjJIQKLXGMQ1G4KfAAK87zEb1QeQSBYeui3dq7FcAQADAgADbQADNgQ.jpg
+2025-04-30 16:59:48 - app - INFO - Received verification command from 6715041286
+2025-04-30 16:59:54 - app - INFO - Deleted temporary verification file: data\temp\verify_AgACAgIAAxkBAAIBUmgSLMwJfFGofjJIQKLXGMQ1G4KfAAK87zEb1QeQSBYeui3dq7FcAQADAgADbQADNgQ.jpg
+2025-04-30 17:00:23 - app - INFO - Received verification command from 6715041286
+2025-04-30 17:00:36 - app - INFO - Deleted temporary verification file: data\temp\verify_AgACAgIAAxkBAAIBPmgSLEJseT6SqPRYJ5qCLwvZv7o7AAK07zEb1QeQSBMTGO94ZAS0AQADAgADeAADNgQ.jpg
+2025-04-30 17:05:37 - app - INFO - Initializing bot...
+2025-04-30 17:05:37 - app - INFO - UserManager initialized
+2025-04-30 17:05:37 - app - INFO - EmbeddingManager initialized
+2025-04-30 17:05:37 - app - INFO - Starting polling
+2025-04-30 17:06:55 - app - INFO - Received start command from 6715041286
+2025-04-30 17:06:57 - app - INFO - Received help command from 6715041286
+2025-04-30 17:06:59 - app - INFO - Received about command from 6715041286
+2025-04-30 17:07:41 - app - INFO - Received add command from 6715041286
+2025-04-30 17:08:56 - app - INFO - Deleted temporary file: data\temp\AgACAgIAAxkBAAIBZmgSLvmYdu5EAT4adgRVgwpqjhwNAALN7zEb1QeQSGMl7isJSqpuAQADAgADeQADNgQ.jpg
+2025-04-30 17:09:11 - app - INFO - Received verification command from 6715041286

@@ -64,6 +64,7 @@ async def process_user_photos(message: types.Message, state: FSMContext):
         
         # Добавляем пользователя
         message.bot.user_manager.add_user(user_name, photo_paths)
+        message.bot.emb_manager.update_embeddings()
         
         await message.answer(texts.ADD_USER_SUCCESS.format(name=user_name))
     finally:

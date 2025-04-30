@@ -18,5 +18,6 @@
 """
 
 from .states_admin import AdminStates
+from .states_verification import VerificationStates
 
-__all__ = ["AdminStates"]
+__all__ = ["AdminStates", "VerificationStates"]

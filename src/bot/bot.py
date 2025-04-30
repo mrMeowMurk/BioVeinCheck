@@ -34,6 +34,7 @@ async def run_bot():
     """
         Основная функция инициализации и запуска бота
     """
+    logger.info("Initializing bot...")
     
     # Инициализация менеджеров
     user_manager = UserManager()

@@ -3,6 +3,7 @@ import os
 import json
 import shutil
 from datetime import datetime
+from ..bot.utils import logger
 
 
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
@@ -26,17 +27,21 @@ class UserManager:
         self.__initialized = True
         os.makedirs(USERS_FOLDER, exist_ok=True)
         self.users = self.load_users()
+        logger.info("UserManager initialized")
 
     def load_users(self):
         if not os.path.exists(USERS_FILE):
+            logger.debug("Users file not found, creating new one")
             return []
         with open(USERS_FILE, 'r', encoding='utf-8') as f:
+            logger.debug("Loading users from file")
             return json.load(f)
 
     def save_users(self):
         os.makedirs(DB_DIR, exist_ok=True)
         with open(USERS_FILE, 'w', encoding='utf-8') as f:
             json.dump(self.users, f, ensure_ascii=False, indent=4)
+            logger.debug("Users saved to file")
 
     def add_user(self, name, image_paths):
         new_id = max((u['id'] for u in self.users), default=0) + 1

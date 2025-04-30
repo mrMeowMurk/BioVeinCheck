@@ -42,3 +42,33 @@ ADD_USER_SUCCESS = (
     "✅ <b>User added successfully!</b>\n\n"
     "User <b>{name}</b> has been added to the system."
 )
+
+VERIFICATION_PHOTO_PROMPT = (
+    "📸 <b>Verification Process</b>\n\n"
+    "Please send a photo of your hand for verification."
+)
+
+VERIFICATION_NO_PHOTO = (
+    "⚠️ <b>No photo detected</b>\n\n"
+    "Please send a photo of your hand."
+)
+
+VERIFICATION_SUCCESS = (
+    "✅ <b>Verification successful!</b>\n\n"
+    "You have been identified as <b>{name}</b>."
+)
+
+VERIFICATION_FAILED = (
+    "❌ <b>Verification failed</b>\n\n"
+    "We couldn't identify you. Please try again."
+)
+
+VERIFICATION_USER_NOT_FOUND = (
+    "⚠️ <b>User not found</b>\n\n"
+    "The system recognized you but couldn't find your profile."
+)
+
+VERIFICATION_ERROR = (
+    "⚠️ <b>Verification error</b>\n\n"
+    "An error occurred during verification. Please try again later."
+)

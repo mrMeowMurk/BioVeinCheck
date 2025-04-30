@@ -5,6 +5,7 @@ import numpy as np
 from PIL import Image
 import torch
 from torchvision import models, transforms
+from ..bot.utils import logger
 
 from src.managers.manager_user import UserManager
 
@@ -48,20 +49,22 @@ class EmbeddingManager:
                 std=[0.229,0.224,0.225]
             )
         ])
+        logger.info("EmbeddingManager initialized")
 
     def _load_embeddings(self):
         if os.path.exists(EMB_PATH):
             with open(EMB_PATH, 'rb') as f:
                 embeddings = pickle.load(f)
-                print(f"Loaded embeddings type: {type(embeddings)}")  # Отладочный вывод
+                logger.debug(f"Loaded embeddings type: {type(embeddings)}")
                 if isinstance(embeddings, dict):
                     return embeddings
                 elif isinstance(embeddings, list):
                     return {str(k['path']): k['vector'] for k in embeddings}
                 else:
-                    print(f"Warning: Unknown embeddings format: {type(embeddings)}")
+                    logger.warning(f"Unknown embeddings format: {type(embeddings)}")
                     return {}
-        return {}  # ключ: 'id/filename', значение: np.array
+        logger.debug("No embeddings file found, creating new one")
+        return {}
 
     def _save_embeddings(self):
         with open(EMB_PATH, 'wb') as f:
