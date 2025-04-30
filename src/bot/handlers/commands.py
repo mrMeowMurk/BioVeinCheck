@@ -16,7 +16,10 @@ from .common.help  import help_handler
 from .common.about import about_handler
 
 # Обработчики команд пользователя   
-from .user.verification import verification_handler
+from .user.verification import verification_handler 
+
+# Обработчики команд администратора
+from .admin.add import AdminStates, add_user_command, process_user_name, process_user_photos
 
 """
     ╔════════════════════════════════════════════════════════════╗
@@ -41,3 +44,6 @@ def register_handlers(dp: Dispatcher):
     # Команды пользователя
     dp.message.register(verification_handler, Command(commands=["verification"]))
 
+    dp.message.register(add_user_command, Command("add"))
+    dp.message.register(process_user_name, AdminStates.WAITING_FOR_NAME)
+    dp.message.register(process_user_photos, AdminStates.WAITING_FOR_PHOTOS)

@@ -25,7 +25,8 @@ from aiogram.fsm.storage.memory import MemoryStorage
 
 from .handlers                   import register_handlers
 from .utils                      import logger
-from ..config                     import config
+from ..config                    import config
+from ..managers                  import EmbeddingManager, UserManager
 
 
 
@@ -34,12 +35,20 @@ async def run_bot():
         Основная функция инициализации и запуска бота
     """
     
+    # Инициализация менеджеров
+    user_manager = UserManager()
+    emb_manager = EmbeddingManager()
+    
     bot = Bot(
         token=config.bot.token,
         default=DefaultBotProperties(
             parse_mode=ParseMode.HTML,
         )
     )
+    
+    # Привязка менеджеров к боту
+    bot.user_manager = user_manager
+    bot.emb_manager = emb_manager
     
     dp = Dispatcher(storage=MemoryStorage())
     register_handlers(dp)
